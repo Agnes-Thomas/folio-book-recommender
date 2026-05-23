@@ -17,7 +17,10 @@ from surprise import Dataset, Reader, SVD
 from surprise.model_selection import train_test_split as surprise_split
 
 # Pre-processed data lives next to the backend/ folder in repo
-DATA_DIR = os.path.join(os.path.dirname(__file__), "..", "..", "data")
+DATA_DIR = os.environ.get(
+    "DATA_DIR",
+    os.path.join(os.path.dirname(__file__), "..", "data")
+)
 
 OL_COV_BASE = "https://covers.openlibrary.org"
 OL_BASE     = "https://openlibrary.org"
