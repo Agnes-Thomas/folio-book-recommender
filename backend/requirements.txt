@@ -3,8 +3,8 @@ uvicorn[standard]>=0.27.0
 pydantic>=2.0.0
 python-dotenv>=1.0.0
 
-# ML / Data
-numpy==1.26.4
+# ML / Data — pinned to pre-built wheels for fast installs
+numpy>=1.26.4
 pandas>=2.0.0
 scikit-learn>=1.4.0
 scikit-surprise>=1.1.3
