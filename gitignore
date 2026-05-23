@@ -1,0 +1,16 @@
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+*.egg-info/
+
+# Raw CSVs (large — never commit these)
+backend/data/_*_raw.csv
+goodbooks_data/
+
+# Node
+node_modules/
+dist/
+
+# Env
+.env
